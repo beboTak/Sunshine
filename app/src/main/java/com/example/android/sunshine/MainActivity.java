@@ -17,12 +17,19 @@ package com.example.android.sunshine;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    TextView weatherdata;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forecast);
+
+        weatherdata=(TextView) findViewById(R.id.tv_weather_data);
+        weatherdata.setText("every data here");
+
+
     }
 }
